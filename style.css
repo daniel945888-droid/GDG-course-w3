@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.timer-display {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin: 30px 0;
+    font-variant-numeric: tabular-nums; /* 讓數字等寬，倒數時不會抖動 */
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-start { background-color: #4ecdc4; }
+.btn-pause { background-color: #ffb142; }
+.btn-reset { background-color: #ff5252; }
